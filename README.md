@@ -1,1 +1,1 @@
-# bootcamp-quality-challenge
+# bootcamp-testing-challenge
