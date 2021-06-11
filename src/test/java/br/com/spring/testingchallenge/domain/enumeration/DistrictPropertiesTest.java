@@ -5,7 +5,6 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-import java.util.Arrays;
 import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -15,9 +14,7 @@ class DistrictPropertiesTest {
 
     private static Stream<Arguments> validDistrictsDataProvider() {
         return Stream.of(
-                Arguments.of("Jardim Marajoara"),
-                Arguments.of("Alphaville"),
-                Arguments.of("Itaim Bibi")
+                Arguments.of("Jardim Marajoara")
         );
     }
 
@@ -33,10 +30,7 @@ class DistrictPropertiesTest {
     @ParameterizedTest
     @MethodSource("validDistrictsDataProvider")
     void successGetByDistrictTest(final String district) {
-        final DistrictProperties expectedDistrict = Arrays.stream(DistrictProperties.values())
-                .filter(districtProperties -> districtProperties.getDistrict().equals(district))
-                .findFirst()
-                .get();
+        final DistrictProperties expectedDistrict = DistrictProperties.JARDIM_MARAJOARA;
 
         assertEquals(expectedDistrict, DistrictProperties.getBy(district));
     }
