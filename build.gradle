@@ -39,7 +39,7 @@ dependencies {
 tasks.withType(Test) {
     testLogging {
         exceptionFormat "full"
-        events "started", "skipped", "passed", "failed"
+        events "passed", "failed"
         showStandardStreams true
     }
 }
