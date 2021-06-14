@@ -7,7 +7,7 @@ The challenge consists on create a rest application that will contain integratio
 ### Summary
 
 1. [How to start the application](#startapp)
-2. [Database structure](#database)
+2. [How to test](#test)
 3. [Swagger](#docs)
 4. [Collections](#collections)
 
@@ -25,7 +25,7 @@ Just run the command: `docker run -dp 8080:8080 vinidomeli/bootcamp-testing-chal
 
 * Ps: The application will run automatically, you can check it running the command `docker ps`.
 
-## 📦 How to run the tests <a name="database"></a>
+## 📦 How to run the tests <a name="test"></a>
 
 This feature will be only available when you are starting the application, you can use the gradle to help you with this
 task.
