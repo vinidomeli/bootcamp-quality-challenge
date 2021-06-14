@@ -27,6 +27,8 @@ Just run the command: `docker run -dp 8080:8080 vinidomeli/bootcamp-testing-chal
 
 ## 📦 How to run the tests <a name="test"></a>
 
+![image](https://user-images.githubusercontent.com/84407703/121944835-7ed25980-cd29-11eb-8ff5-e608c88747b9.png)
+
 This feature will be only available when you are starting the application, you can use the gradle to help you with this
 task.
 
